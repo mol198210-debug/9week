@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+    int n;
+    int cnt = 0;
+    while (1){
+        scanf("%d",&n);
+        if(n == 0){
+            break;
+        }
+        else if(n%3==0 || n%5==0){
+            continue;
+        }else{
+            cnt++;
+        }
+    }
+    printf("%d\n",cnt);
+    return 0;
+}
